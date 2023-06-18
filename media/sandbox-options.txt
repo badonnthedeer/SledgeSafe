@@ -1,0 +1,7 @@
+VERSION = 1,
+
+option SledgeSafe.SafehouseMembersCanSledge
+{
+	type = boolean, default = false,
+	page = SledgeSafe, translation = SledgeSafe_SafehouseMembersCanSledge,
+}

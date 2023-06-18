@@ -1,0 +1,5 @@
+Sandbox_EN = {
+	Sandbox_SledgeSafe = "SledgeSafe",
+	Sandbox_SafehouseMembersCanSledge = "Safehouse Members Can Sledge",
+	Sandbox_SafehouseMembersCanSledge_tooltip = "Whether members of a safehouse can use the sledgehammer on objects or tiles within the zone of the safehouse.<br>The Owner of the safehouse is always allowed to sledge.",
+    }

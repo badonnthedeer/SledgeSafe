@@ -1,0 +1,5 @@
+name=SledgeSafe
+poster=poster.png
+id=SledgeSafe
+description=Prevent sledgehammers from being used on safehouses that a player isn't part of.
+url=https://github.com/badonnthedeer/SledgeSafe
