@@ -46,10 +46,10 @@ ISDestroyCursor.canDestroy = function(self, object)
 
         if safehouse ~= nil
         then
-            if safehouse:getOwner() == self.player:getUsername()
+            if safehouse:getOwner() == self.character:getUsername()
             then
                 return true;
-            elseif SledgeSafe.playerPartOfSafehouse(safehouse, self.player)
+            elseif SledgeSafe.playerPartOfSafehouse(safehouse, self.character)
             then
                 if SandboxVars.SledgeSafe.SafehouseMembersCanSledge
                 then
