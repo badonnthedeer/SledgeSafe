@@ -14,5 +14,5 @@ Do you really enjoy this mod--or even better--want to build on it? Please consid
 <h1>Special Thanks</h1>
 to Torstein and the Nexus Gaming community for commissioning this mod!
 
-Workshop ID: ?
+Workshop ID: 2993616454
 Mod ID: SledgeSafe
