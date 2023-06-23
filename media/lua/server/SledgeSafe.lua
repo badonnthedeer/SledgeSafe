@@ -60,10 +60,9 @@ ISDestroyCursor.canDestroy = function(self, object)
             else
                 return false;
             end
-        else
-            return canDestroy;
         end
     end
+    return canDestroy;
 end
 
 --[[
