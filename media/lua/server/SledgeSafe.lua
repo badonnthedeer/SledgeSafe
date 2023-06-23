@@ -38,7 +38,7 @@ ISDestroyCursor.canDestroy = function(self, object)
 
     local canDestroy = oldCanDestroy(self, object);
 
-    if canDestroy == true and IsAdmin() == false
+    if canDestroy == true and isAdmin() == false
     then
         local square = getCell():getGridSquare(object:getX(), object:getY(), object:getZ())
 
