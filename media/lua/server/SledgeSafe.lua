@@ -31,7 +31,6 @@ local function playerPartOfSafehouse(safehouse, player)
 end
 
 
-local oldCanDestroy = ISDestroyCursor.canDestroy;
 function ISDestroyCursor.canDestroy(self, object)
 
     local canDestroy = oldCanDestroy(self, object);
@@ -55,6 +54,8 @@ function ISDestroyCursor.canDestroy(self, object)
                 else
                     return false;
                 end
+            else
+                return false;
             end
         else
             return canDestroy;
