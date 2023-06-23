@@ -21,8 +21,8 @@ end
 
 
 SledgeSafe.playerPartOfSafehouse = function(safehouse, player)
-    local playerSafehouse = SafeHouse:alreadyHaveSafehouse(player);
-    if playerSafehouse
+    local playerSafehouse = safehouse:alreadyHaveSafehouse(player);
+    if playerSafehouse ~= nil
     then
         if playerSafehouse == safehouse
         then
