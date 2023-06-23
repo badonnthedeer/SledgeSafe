@@ -6,6 +6,7 @@ SledgeSafe is a small mod that allows the use of sledgehammers in multiplayer wi
 <li>A player that isn't part of a safehouse won't be able to destroy it. They will, however, be able to destroy unowned buildings!</li>
 <li>A player that is an owner of a safehouse will always be able to destroy it using a sledgehammer.</li>
 <li>Members of a safehouse are allowed to destroy a safehouse given the sandbox option "Safehouse Members Can Sledge" is turned on!</li>
+<li>Admins of servers can destroy any part of any safehouse.</li>
 </ul>
 <hr>
 <h1>A message from the creator</h1>
