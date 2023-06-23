@@ -1,10 +1,12 @@
+local SledgeSafe = {};
+
 -- C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\
 
 -- C:\Users\[user]\Zomboid\mods
 -- C:\Users\[user]\Zomboid\Logs
 
 
-local function getSafeHouseByLocation(objX, objY)
+SledgeSafe.getSafeHouseByLocation = function(objX, objY)
     local safehouseList = SafeHouse.getSafehouseList()
     for i= 0, safehouseList:size() - 1
     do
@@ -18,7 +20,7 @@ local function getSafeHouseByLocation(objX, objY)
 end
 
 
-local function playerPartOfSafehouse(safehouse, player)
+SledgeSafe.playerPartOfSafehouse = function(safehouse, player)
     local playerSafehouse = SafeHouse:alreadyHaveSafehouse(player);
     if playerSafehouse
     then
@@ -31,7 +33,8 @@ local function playerPartOfSafehouse(safehouse, player)
 end
 
 
-function ISDestroyCursor.canDestroy(self, object)
+local oldCanDestroy =  ISDestroyCursor.canDestroy
+ISDestroyCursor.canDestroy = function(self, object)
 
     local canDestroy = oldCanDestroy(self, object);
 
@@ -39,14 +42,14 @@ function ISDestroyCursor.canDestroy(self, object)
     then
         local square = getCell():getGridSquare(object:getX(), object:getY(), object:getZ())
 
-        local safehouse = getSafeHouseByLocation(square:getX(), square:getY())
+        local safehouse = SledgeSafe.getSafeHouseByLocation(square:getX(), square:getY())
 
         if safehouse ~= nil
         then
             if safehouse:getOwner() == self.player:getUsername()
             then
                 return true;
-            elseif playerPartOfSafehouse(safehouse, self.player)
+            elseif SledgeSafe.playerPartOfSafehouse(safehouse, self.player)
             then
                 if SandboxVars.SledgeSafe.SafehouseMembersCanSledge
                 then
