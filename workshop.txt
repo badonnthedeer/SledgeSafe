@@ -1,6 +1,6 @@
 version=0.1
 title=SledgeSafe
 description=Waiting for description upload.
-description=Workshop ID: ?
+description=Workshop ID: 2993616454
 description=Mod ID: Sledgesafe
 visibility=public
