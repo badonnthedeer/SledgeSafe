@@ -56,6 +56,8 @@ function ISDestroyCursor.canDestroy(self, object)
                     return false;
                 end
             end
+        else
+            return canDestroy;
         end
     end
 end
