@@ -1,6 +1,39 @@
-version=1.0
+version=1
+id=2993616454
 title=SledgeSafe
-description=Waiting for description upload.
-description=Workshop ID: 2993616454
-description=Mod ID: Sledgesafe
-visibility=public
+description=SledgeSafe is a small mod that allows the use of sledgehammers in multiplayer without endangering safehouses!
+
+description=
+
+description=[h1]Details[/h1]
+
+description=[list]
+
+description=[*]A player that isn't part of a safehouse won't be able to destroy it. They will, however, be able to destroy unowned buildings!
+
+description=[*]A player that is an owner of a safehouse will always be able to destroy it using a sledgehammer.
+
+description=[*]Members of a safehouse are allowed to destroy a safehouse given the sandbox option "Safehouse Members Can Sledge" is turned on!
+
+description=[*]Admins of servers can destroy any part of any safehouse.
+
+description=[/list]
+
+description=[hr][/hr]
+
+description=[h1]A message from the creator[/h1]
+
+description=Do you really enjoy this mod--or even better--want to build on it? Please consider [url=https://ko-fi.com/badonnthedeer]donating to me[/url] so I can pay my bills. I'm recently unemployed and every little bit helps!
+
+description=
+
+description=[h1]Special Thanks[/h1]
+
+description=to Torstein and the Nexus Gaming community for commissioning this mod!
+
+description=
+
+description=[quote=Badonn]Please don't copy this mod and upload it as your own! Please also ask if you can use this in a mod pack. If you would like to translate the mod, send me a message or leave a comment and I'll work with you to add it in![/quote]
+
+tags=Build 41;Balance;Building;Misc;Multiplayer
+visibility=unlisted
