@@ -36,4 +36,4 @@ description=
 description=[quote=Badonn]Please don't copy this mod and upload it as your own! Please also ask if you can use this in a mod pack. If you would like to translate the mod, send me a message or leave a comment and I'll work with you to add it in![/quote]
 
 tags=Build 41;Balance;Building;Misc;Multiplayer
-visibility=unlisted
+visibility=public
