@@ -23,7 +23,7 @@ description=[hr][/hr]
 
 description=[h1]A message from the creator[/h1]
 
-description=Do you really enjoy this mod--or even better--want to build on it? Please consider [url=https://ko-fi.com/badonnthedeer]donating to me[/url] so I can pay my bills. I'm recently unemployed and every little bit helps!
+description=Do you really enjoy this mod--or even better--want to build on it? Please consider [url=https://ko-fi.com/badonnthedeer]donating to me[/url]. I'm in financial need and every bit helps!! Thank you.
 
 description=
 
