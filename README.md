@@ -10,7 +10,7 @@ SledgeSafe is a small mod that allows the use of sledgehammers in multiplayer wi
 </ul>
 <hr>
 <h1>A message from the creator</h1>
-Do you really enjoy this mod--or even better--want to build on it? Please consider <a href="https://ko-fi.com/badonnthedeer">donating to me</a> so I can pay my bills. I'm recently unemployed and every little bit helps!
+Do you really enjoy this mod--or even better--want to build on it? Please consider <a href="https://ko-fi.com/badonnthedeer">donating to me</a>. I'm in financial need and every bit helps!! Thank you.
 
 <h1>Special Thanks</h1>
 to Torstein and the Nexus Gaming community for commissioning this mod!
