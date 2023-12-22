@@ -5,3 +5,8 @@ option SledgeSafe.SafehouseMembersCanSledge
 	type = boolean, default = false,
 	page = SledgeSafe, translation = SledgeSafe_SafehouseMembersCanSledge,
 }
+option SledgeSafe.SafehouseMembersCanPlace
+{
+	type = boolean, default = true,
+	page = SledgeSafe, translation = SledgeSafe_SafehouseMembersCanPlace,
+}

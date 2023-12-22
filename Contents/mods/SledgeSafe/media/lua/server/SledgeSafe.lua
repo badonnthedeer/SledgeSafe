@@ -48,9 +48,9 @@
 -- Have a problem or question? Reach me on Discord: badonn
 ------------------------------------------------------------------------------------------------------
 
-
-
 local SledgeSafe = {};
+
+--media\lua\server\BuildingObjects\ISPlace3DItemCursor.lua
 
 -- C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\
 
@@ -117,6 +117,37 @@ ISDestroyCursor.canDestroy = function(self, object)
     return canDestroy;
 end
 
+local oldIsValidPlacement =  ISMoveableCursor.isValid( _square )
+ISMoveableCursor.isValid = function(self, object)
+
+    local isValid = oldIsValidPlacement(self, object);
+
+    if isValid == true and isAdmin() == false
+    then
+        local square = getCell():getGridSquare(object:getX(), object:getY(), object:getZ())
+
+        local safehouse = SledgeSafe.getSafeHouseByLocation(square:getX(), square:getY())
+
+        if safehouse ~= nil
+        then
+            if safehouse:getOwner() == self.character:getUsername()
+            then
+                return true;
+            elseif SledgeSafe.playerPartOfSafehouse(safehouse, self.character)
+            then
+                if SandboxVars.SledgeSafe.SafehouseMembersCanPlace
+                then
+                    return true;
+                else
+                    return false;
+                end
+            else
+                return false;
+            end
+        end
+    end
+    return isValid;
+end
 --[[
 public static SafeHouse isSafeHouse(IsoGridSquare var0, String var1, boolean var2) {
       if (var0 == null) {

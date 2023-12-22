@@ -2,4 +2,6 @@ Sandbox_EN = {
 	Sandbox_SledgeSafe = "SledgeSafe",
 	Sandbox_SledgeSafe_SafehouseMembersCanSledge = "Safehouse Members Can Sledge",
 	Sandbox_SledgeSafe_SafehouseMembersCanSledge_tooltip = "Whether members of a safehouse can use the sledgehammer on objects or tiles within the zone of the safehouse.<br>The Owner of the safehouse is always allowed to sledge.",
-    }
+    Sandbox_SledgeSafe_SafehouseMembersCanPlace = "Safehouse Members Can Place",
+	Sandbox_SledgeSafe_SafehouseMembersCanPlace_tooltip = "Whether members of a safehouse can place furniture objects or tiles within the zone of the safehouse.<br>The Owner of the safehouse is always allowed to place.",
+	}
