@@ -90,7 +90,8 @@ ISDestroyCursor.canDestroy = function(self, object)
 
     local canDestroy = oldCanDestroy(self, object);
 
-    if canDestroy == true and isAdmin() == false
+    if canDestroy == true
+    and isAdmin() == false
     then
         local square = getCell():getGridSquare(object:getX(), object:getY(), object:getZ())
 
@@ -117,7 +118,7 @@ ISDestroyCursor.canDestroy = function(self, object)
     return canDestroy;
 end
 
-local oldIsValidPlacement =  ISMoveableCursor.isValid( _square )
+local oldIsValidPlacement =  ISMoveableCursor.isValid
 ISMoveableCursor.isValid = function(self, object)
 
     local isValid = oldIsValidPlacement(self, object);
